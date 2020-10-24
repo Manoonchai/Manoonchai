@@ -12,8 +12,15 @@ pub fn analyze_string(str: &str) -> HashMap<String, u32> {
     let mut output: HashMap<String, u32> = HashMap::new();
 
     for ch in str.chars() {
-        let counter = output.entry(ch.to_string()).or_insert(0);
-        *counter += 1;
+        match ch {
+            '\n' => continue,
+            ' ' => continue,
+            '0'..='9' => continue,
+            _ => {
+                let counter = output.entry(ch.to_string()).or_insert(0);
+                *counter += 1;
+            },
+        }
     }
 
     output
@@ -38,15 +45,15 @@ mod tests {
 
     #[test]
     fn test_analyze_string() {
-        let output = analyze_string("123");
-        assert_eq!(output["1"], 1);
-        assert_eq!(output["2"], 1);
-        assert_eq!(output["3"], 1);
+        let output = analyze_string("กขค");
+        assert_eq!(output["ก"], 1);
+        assert_eq!(output["ข"], 1);
+        assert_eq!(output["ค"], 1);
 
-        let output = analyze_string("1233");
-        assert_eq!(output["1"], 1);
-        assert_eq!(output["2"], 1);
-        assert_eq!(output["3"], 2);
+        let output = analyze_string("กขคค");
+        assert_eq!(output["ก"], 1);
+        assert_eq!(output["ข"], 1);
+        assert_eq!(output["ค"], 2);
     }
 
     #[test]
@@ -60,12 +67,19 @@ mod tests {
     }
 
     #[test]
+    fn test_analyze_string_skip_whitespaces() {
+        let output = analyze_string("สวัสดี \n ลาก่อน");
+        assert_eq!(output.get(" "), None);
+        assert_eq!(output.get("\n"), None);
+    }
+
+    #[test]
     fn test_analyze_string_sorted() {
-        let output = analyze_string_sorted("544aa22a2211111");
-        assert_eq!(output[0], ("1".to_string(), 5));
-        assert_eq!(output[1], ("2".to_string(), 4));
-        assert_eq!(output[2], ("a".to_string(), 3));
-        assert_eq!(output[3], ("4".to_string(), 2));
-        assert_eq!(output[4], ("5".to_string(), 1));
+        let output = analyze_string_sorted("จ งง ขขขข คคค กกกกก");
+        assert_eq!(output[0], ("ก".to_string(), 5));
+        assert_eq!(output[1], ("ข".to_string(), 4));
+        assert_eq!(output[2], ("ค".to_string(), 3));
+        assert_eq!(output[3], ("ง".to_string(), 2));
+        assert_eq!(output[4], ("จ".to_string(), 1));
     }
 }
