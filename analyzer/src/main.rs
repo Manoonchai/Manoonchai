@@ -5,9 +5,14 @@ use std::path::Path;
 use lib::*;
 
 fn main() {
-    println!("Hello, world!");
+    println!("Analyzer :");
 
-    let filename = Path::new("data/thai1k.txt");
+    process("data/thai1k.txt", "data/thai1k_out.txt");
+    process("data/thai5k.txt", "data/thai5k_out.txt");
+}
+
+fn process(input_path: &str, output_path: &str) {
+    let filename = Path::new(input_path);
     let contents = fs::read_to_string(filename)
         .expect("Something went wrong reading the file");
 
@@ -20,7 +25,7 @@ fn main() {
         out.push_str("\n");
     }
 
-    fs::write(Path::new("data/thai1k_out.txt"), out).unwrap();
+    fs::write(Path::new(output_path), out).unwrap();
 
     println!("{:?}", result);
 }
