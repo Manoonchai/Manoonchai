@@ -1,13 +1,5 @@
 use std::collections::HashMap;
 
-pub fn run() -> bool {
-    println!("Analyzing...");
-
-    println!("{:?}", analyze_string("สวัสดี"));
-
-    true
-}
-
 pub fn analyze_string(str: &str) -> HashMap<String, u32> {
     let mut output: HashMap<String, u32> = HashMap::new();
 
@@ -34,14 +26,17 @@ pub fn analyze_string_sorted(str: &str) -> Vec<(String, u32)> {
     result_vec
 }
 
+fn analyze_string_triads(str: &str) -> HashMap<String, u32> {
+    let mut output: HashMap<String, u32> = HashMap::new();
+
+    let strArray = str.chars().collect();
+
+    output
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
-
-    #[test]
-    fn test_run() {
-        assert!(run());
-    }
 
     #[test]
     fn test_analyze_string() {
@@ -81,5 +76,12 @@ mod tests {
         assert_eq!(output[2], ("ค".to_string(), 3));
         assert_eq!(output[3], ("ง".to_string(), 2));
         assert_eq!(output[4], ("จ".to_string(), 1));
+    }
+
+    #[test]
+    fn test_analyze_string_triads() {
+        let output = analyze_string_triads("abcdefg hij kl m bcde");
+
+        assert_eq!(output["abc"], 1);
     }
 }
