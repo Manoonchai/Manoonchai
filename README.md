@@ -17,7 +17,7 @@ Generated from [Carpalx-th](https://github.com/narze/carpalx-th), and edited by 
 ["ฆ", "ฌ", "ฉ", "ผ", "ฝ", "฿", "ณ", "ฟ", "ฎ", "?"]
 ```
 
-![image](https://user-images.githubusercontent.com/248741/115959194-3d95a880-a535-11eb-919b-0d3ae8e5938b.png)
+![image](https://user-images.githubusercontent.com/248741/115959989-383a5d00-a539-11eb-86e5-0a70b23a999e.png)
 
 ## Why?
 
