@@ -19,6 +19,23 @@ Generated from [Carpalx-th](https://github.com/narze/carpalx-th), and edited by 
 
 ![image](https://user-images.githubusercontent.com/248741/115959989-383a5d00-a539-11eb-86e5-0a70b23a999e.png)
 
+## v0.2 (May 1, 2021)
+
+```plaintext
+["1","2","3","4","5","6","7","8","9","0","-","="]
+["พ","ค","ย","ว","ล","ป","ั","ก","ต","บ","็","ู","์"]
+["ห","เ","น","ร","ม","อ","า","่","้","ง","ื"]
+["ช","ไ","ส","ท","จ","ิ","ี","ด","ะ","ุ"]
+["!","@","#","$","%","^","&","*","(",")","_","+"]
+["ฑ","ฒ","ษ","ญ","ฟ","ฎ","ฉ","ภ","ฐ","ฤ","ฆ","ฌ","ฯ"]
+["ๆ","ถ","แ","ข","ผ","ึ","ใ","ำ","โ","ศ","ฮ"]
+["ฬ","๋","๊","ซ","ฝ","?","ณ","ธ","ฏ","฿"]
+```
+
+After model optimization, weight adjustment and more than 10 million iterations, this layout achieve 49.5% improvement from Kedmanee.
+
+![image](https://user-images.githubusercontent.com/248741/116779603-856e7f80-aaa1-11eb-9175-26d0802d0bd9.png)
+
 ## Why?
 
 Most of the problems are like problems with QWERTY layout, both Kedmanee & Pattachote layouts are:
