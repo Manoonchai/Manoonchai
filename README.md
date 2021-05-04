@@ -2,6 +2,8 @@
 
 Modern &amp; Productive Thai keyboard layout
 
+[See the preview of the layout](https://carpalx-th.vercel.app)
+
 ## v0.1 (April 24, 2021)
 
 Generated from [Carpalx-th](https://github.com/narze/carpalx-th), and edited by hand to make it more sensible. AltGr layer not available yet so `ฃ`, `ฅ` will be missing.
