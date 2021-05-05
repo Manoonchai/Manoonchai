@@ -38,6 +38,26 @@ After model optimization, weight adjustment and more than 10 million iterations,
 
 ![image](https://user-images.githubusercontent.com/248741/116779603-856e7f80-aaa1-11eb-9175-26d0802d0bd9.png)
 
+## v0.3 (May 6, 2021)
+
+```plaintext
+["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "="]
+["ใ", "ต", "ห", "ล", "ส", "ป", "ั", "ก", "ิ", "บ", "็", "ฬ", "ฯ"]
+["ง", "เ", "ร", "น", "ม", "อ", "า", "่", "้", "ว", "ื"]
+["ุ", "ไ", "ท", "ย", "จ", "ค", "ี", "ด", "ะ", "ู"]
+["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+"]
+["ฒ", "ฏ", "ซ", "ญ", "ฟ", "ฉ", "ึ", "ธ", "ฐ", "ฎ", "ฆ", "ฑ", "ฌ"]
+["ษ", "ถ", "แ", "ช", "พ", "ผ", "ำ", "ข", "โ", "ภ", "\""]
+["ฤ", "ฝ", "ๆ", "ณ", "๊", "๋", "์", "ศ", "ฮ", "?"]
+```
+
+- Contributed by ([@iNViTiON](https://github.com/iNViTiON))
+- Replaced `฿` with `"`
+- Moved `฿`, `"`, `ฑ`, `ฌ`, `ฬ`, `ฯ` to the right most
+- Effort is slightly reduced, but acceptable for real world usage
+
+![image](https://user-images.githubusercontent.com/248741/117223218-66704480-ae37-11eb-9ee5-0ae8556f4d02.png)
+
 ## Why?
 
 Most of the problems are like problems with QWERTY layout, both Kedmanee & Pattachote layouts are:
