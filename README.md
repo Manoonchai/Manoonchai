@@ -40,6 +40,8 @@ After model optimization, weight adjustment and more than 10 million iterations,
 
 ## v0.3 (May 6, 2021)
 
+[Download printable format](https://github.com/narze/Manoonchai/files/6438811/layout.pdf)
+
 ```plaintext
 ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "="]
 ["ใ", "ต", "ห", "ล", "ส", "ป", "ั", "ก", "ิ", "บ", "็", "ฬ", "ฯ"]
