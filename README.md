@@ -2,7 +2,7 @@
 
 Modern &amp; Productive Thai keyboard layout
 
-[Try me on Manoontype!](https://manoontype.web.app) or [See the preview of the layout & optimization score](https://carpalx-th.vercel.app)
+[Try me on Manoontype!](https://manoontype.web.app) or [See the preview of the layout & optimization score](https://layout-analyzer.vercel.app)
 
 ## v0.3 (May 6, 2021)
 
