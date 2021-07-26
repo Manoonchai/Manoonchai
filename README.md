@@ -4,6 +4,24 @@ Modern &amp; Productive Thai keyboard layout
 
 [Try me on Manoontype!](https://manoontype.web.app) or [See the preview of the layout & optimization score](https://layout-analyzer.vercel.app)
 
+## v1.0 (July 26, 2021)
+
+[Download](https://github.com/Manoonchai/Manoonchai/releases)
+
+```plaintext
+(AltGr Layer)
+["๑", "๒", "๓", "๔", "๕", "๖", "๗", "๘", "๙", "๐", "÷", "×"]
+[---, ---, ---, ---, ---, ---, ---, ---, ---, ---, "[", "]", "\"]
+["◌", "๏", "๛", "฿", ---, "ํ", "ๅ", "ฃ", ---, ";", "'"]
+["ฦ", ---, "๚", ---, ---, "ฅ", "๎", ",", ".", "/"]
+```
+
+- Like v0.3, but add `AltGr` layer to support remaining characters & common symbols for ease of use.
+- `AltGr` layer is `Option` key on macOS, `Left Ctrl+Alt` or `Right Alt` on Windows.
+
+<details>
+  <summary>Previous Versions</summary>
+
 ## v0.3 (May 6, 2021)
 
 [Download printable format](https://github.com/narze/Manoonchai/files/6438811/layout.pdf)
@@ -25,9 +43,6 @@ Modern &amp; Productive Thai keyboard layout
 - Effort is slightly reduced, but acceptable for real world usage
 
 ![image](https://user-images.githubusercontent.com/248741/117223218-66704480-ae37-11eb-9ee5-0ae8556f4d02.png)
-
-<details>
-  <summary>Previous Versions</summary>
 
 ## v0.2 (May 1, 2021)
 
